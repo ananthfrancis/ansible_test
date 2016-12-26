@@ -4,8 +4,7 @@
     "node1": {
       "Type": "AWS::EC2::Instance",
       "Properties": {
-        "ImageId": "ami-ced77aad",
-        "keyName": "immutable"
+        "ImageId": "ami-ced77aad"
       }
     }
   }
