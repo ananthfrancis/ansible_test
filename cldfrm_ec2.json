@@ -10,9 +10,14 @@
     }
   },
   "Outputs": {
-    "EC2InstanceID":{
-      "Value" : {"Ref": "Ec2Instance"},
-      "Description" : "The Instance ID of the created Ec2 Instance"
+    "JenkinsServerDNSName": {
+      "Description": "DNS Name of Jenkins Server",
+      "Value": {
+        "Fn::GetAtt": [
+          "Ec2Instance",
+          "PublicDnsName"
+        ]
+      }
     }
   }
 }
