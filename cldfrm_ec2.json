@@ -1,12 +1,18 @@
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Resources": {
-    "node1": {
+    "Ec2Instance": {
       "Type": "AWS::EC2::Instance",
       "Properties": {
         "ImageId" : "ami-ced77aad",
 	"KeyName" : "immutable"
       }
+    }
+  },
+  "Outputs": {
+    "EC2InstanceID":{
+      "Value" : {"Ref": "Ec2Instance"},
+      "Description" : "The Instance ID of the created Ec2 Instance"
     }
   }
 }
