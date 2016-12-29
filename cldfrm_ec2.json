@@ -5,17 +5,16 @@
       "Type": "AWS::EC2::Instance",
       "Properties": {
         "ImageId" : "ami-ced77aad",
-	"KeyName" : "immutable",
-	"InstanceType" : "t2.medium",
-	"Tags"	  : [
-	{"Key" : "UserID",
-	 "Value" : "ananthfrancis"},
-	{"Key" : "email-id",
-	 "Value" : "ananthfrancis.07@gmail.com"}
+        "KeyName" : "immutable",
+        "InstanceType" : "t2.medium",
+        "Tags"    : [
+        {"Key" : "UserID",
+         "Value" : "ananthfrancis"},
+        {"Key" : "email-id",
+         "Value" : "ananthfrancis.07@gmail.com"}
        ]
-      },
-   
-    }
+      }
+	}
   },
   "Outputs": {
     "JenkinsServerDNSName": {
@@ -29,3 +28,4 @@
     }
   }
 }
+
