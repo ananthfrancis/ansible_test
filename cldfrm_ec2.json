@@ -18,7 +18,7 @@
         "Comment" : "Install a ansible",
         "AWS::CloudFormation::Init" : {
           "sources" : {
-                "C:\" : "https://s3-ap-southeast-1.amazonaws.com/ansiblepss3/ConfigureRemotingForAnsible.zip"
+                "C:\test.json" : "https://s3-ap-southeast-1.amazonaws.com/ansiblepss3/ConfigureRemotingForAnsible.zip"
                       }
                     }
                 }
