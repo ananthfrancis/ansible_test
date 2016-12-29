@@ -1,2 +1,5 @@
 [tomcat-servers]
 flananth
+
+[windows]
+ec2-54-169-185-185.ap-southeast-1.compute.amazonaws.com

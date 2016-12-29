@@ -13,7 +13,15 @@
 	{"Key" : "email-id",
 	 "Value" : "ananthfrancis.07@gmail.com"}
        ]
-      }
+      },
+   "Metadata" : {
+        "Comment" : "Install a ansible",
+        "AWS::CloudFormation::Init" : {
+          "sources" : {
+				"C:\ansible_winrm.json" : "https://s3-ap-southeast-1.amazonaws.com/ansiblepss3/ConfigureRemotingForAnsible.ps1"
+					  }
+			}
+		}
     }
   },
   "Outputs": {
